@@ -8,7 +8,6 @@
 <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.pink-red.min.css">
 <script defer src="https://code.getmdl.io/1.2.0/material.min.js"></script>
 <style>
-
    body::before {
    background-size: cover;
    background-attachment: fixed;
@@ -21,7 +20,6 @@
    top: 0;
    position: fixed;
    }
-
    @media (max-width: 512px)  and (min-resolution: 1.5dppx),
    (max-width: 1024px) and (max-resolution: 1.5dppx) {
    body::before {
@@ -41,86 +39,82 @@
    }
    }
    .slideanim {visibility:hidden;}
-  .slide {
-    /* The name of the animation */
-    animation-name: slide;
-    -webkit-animation-name: slide; 
-    /* The duration of the animation */
-    animation-duration: 1s; 
-    -webkit-animation-duration: 1s;
-    /* Make the element visible */
-    visibility: visible; 
-}
-
-
-
-
-/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
-@keyframes slide {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(70%);
-    } 
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0%);
-    } 
-}
-@-webkit-keyframes slide {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(70%);
-    } 
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0%);
-    }
-}
-
-.mdl-card__media{
+   .slide {
+   /* The name of the animation */
+   animation-name: slide;
+   -webkit-animation-name: slide; 
+   /* The duration of the animation */
+   animation-duration: 1s; 
+   -webkit-animation-duration: 1s;
+   /* Make the element visible */
+   visibility: visible; 
+   }
+   /* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+   @keyframes slide {
+   0% {
+   opacity: 0;
+   -webkit-transform: translateY(70%);
+   } 
+   100% {
+   opacity: 1;
+   -webkit-transform: translateY(0%);
+   } 
+   }
+   @-webkit-keyframes slide {
+   0% {
+   opacity: 0;
+   -webkit-transform: translateY(70%);
+   } 
+   100% {
+   opacity: 1;
+   -webkit-transform: translateY(0%);
+   }
+   }
+   .mdl-card__media{
    background-color: #bb0001;
-
-}
-.card-text{
-  font-size: 16px;
-}
-.top-card{
-  margin-top: 75;
-}
-.wust{
-  margin-top: 75;
-
-}
-.bplogo{
-  margin-top: 150;
-}
-.bgr{
-  background-color: #bb0001;
-}
-.mdl-button--accent{
-  background-color: #bb0001
-}
-.test{
-  margin-top: -75;
-}
+   }
+   .card-text{
+   font-size: 16px;
+   }
+   .top-card{
+   margin-top: 75;
+   }
+   .wust{
+   margin-top: 75;
+   }
+   .bplogo{
+   margin-top: 150;
+   }
+   .bgr{
+   background-color: #bb0001;
+   }
+   .mdl-button--accent{
+   background-color: #bb0001
+   }
+   .test{
+   margin-top: -75;
+   }
+   .tit{
+    padding-bottom: 15px;
+    padding-top: 15px;
+   }
 </style>
 <body>
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
-         <div class="mdl-layout__header-row text-center bgr">      
-            <h2 class="mdl-layout-title text-center">WUSTHOF KNIFE SHARPENING</h2>          
-         </div>       
+         <div class="mdl-layout__header-row text-center bgr">
+            <h2 class="mdl-layout-title text-center">WUSTHOF KNIFE SHARPENING</h2>
+         </div>
       </header>
-</div>
-<div class="mdl-grid">
-          <div class="mdl-cell mdl-cell--12-col text-center center-block">
-               <img class="mdl-shadow--6dp wust" src="https://basicsplus.com/media/catalog/category/knife_sharpening_1.png">
-               </div>
-</div>
-<div class="mdl-grid test">
-  <div class="mdl-card mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-shadow--2dp top-card ">
-    
-    <div class="mdl-card__media mdl-color-text--grey-50 text-center">
+   </div>
+   <div class="mdl-grid">
+      <div class="mdl-cell mdl-cell--12-col text-center center-block">
+         <img class="mdl-shadow--6dp wust" src="https://basicsplus.com/media/catalog/category/knife_sharpening_1.png">
+      </div>
+   </div>
+   <div class="mdl-grid test">
+      <div class="mdl-card mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-shadow--2dp top-card ">
+         <div class="mdl-card__media mdl-color-text--grey-50 text-center">
             <h3>What We Do?</h3>
          </div>
          <div class="mdl-card__supporting-text meta mdl-color-text--grey-600 text-center center-block">
@@ -129,12 +123,12 @@
                <span>We offer knife sharpening for all types of "Wusthof Knives" including: Chef knives, Bread knives, Paring knives, and more.</span>
             </div>
          </div>
-  </div>
-  <div class="mdl-cell mdl-cell--4-col mdl-cell--hide-tablet mdl-cell--hide-phone">
-    <!-- <img class="center-block bplogo" src="https://basicsplus.com/skin/frontend/rwd/default/images/logo.png"> -->
-  </div>
-  <div class="mdl-card mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-shadow--2dp top-card">
-    <div class="mdl-card__media mdl-color-text--grey-50 text-center">
+      </div>
+      <div class="mdl-cell mdl-cell--4-col mdl-cell--hide-tablet mdl-cell--hide-phone">
+         <!-- <img class="center-block bplogo" src="https://basicsplus.com/skin/frontend/rwd/default/images/logo.png"> -->
+      </div>
+      <div class="mdl-card mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-shadow--2dp top-card">
+         <div class="mdl-card__media mdl-color-text--grey-50 text-center">
             <h3>Info</h3>
          </div>
          <div class="mdl-card__supporting-text meta mdl-color-text--grey-600 text-center center-block">
@@ -144,8 +138,73 @@
                <a target="_blank" href="https://basicsplus.com/shop-by-brand/wusthof.html"><button type="button" class="bgr mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Buy Now</button></a>
             </div>
          </div>
-  </div>
-</div>
-
-
+      </div>
+   </div>
+   <div class="mdl-grid">
+     <div class="mdl-cell mdl-cell--12-col">
+         <div class="mdl-card__media mdl-color-text--grey-50 text-center">
+            <h3 class="tit mdl-shadow--4dp">Where to Find Us?</h3>
+         </div>
+      </div>
+   </div>
+   <div class="mdl-grid slideanim">
+   
+      <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-phone">
+         <div class="mdl-card mdl-shadow--4dp mdl-card--border">
+            <div class="mdl-card__media">
+               <img src="pic/map.png">
+            </div>
+            <div class="mdl-card__supporting-text text-center center-block mdl-card--border">
+               <address class="card-text"> 91 3rd Ave <br /> New York, NY, 10003 <br />Phone: 212-488-6586</address>
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+               <a href="http://goo.gl/f4MoKp" target="_blank"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">Directions</button></a>
+               <button class="mdl-button mdl-js-button mdl-js-ripple-effect ">See Hours</button>
+               <button class="mdl-button mdl-js-button mdl-js-ripple-effect visible-xs-inline">Call</button>  
+            </div>
+         </div>
+      </div>
+      <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-phone">
+         <div class="mdl-card mdl-shadow--4dp mdl-card--border">
+            <div class="mdl-card__media">
+               <img src="pic/map.png">
+            </div>
+            <div class="mdl-card__supporting-text text-center center-block mdl-card--border">
+               <address class="card-text"> 91 3rd Ave <br /> New York, NY, 10003 <br />Phone: 212-488-6586</address>
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+               <a href="http://goo.gl/f4MoKp" target="_blank"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">Directions</button></a>
+               <button class="mdl-button mdl-js-button mdl-js-ripple-effect ">See Hours</button>
+               <button class="mdl-button mdl-js-button mdl-js-ripple-effect visible-xs-inline">Call</button>  
+            </div>
+         </div>
+      </div>
+      <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-phone">
+         <div class="mdl-card mdl-shadow--4dp mdl-card--border">
+            <div class="mdl-card__media">
+               <img src="pic/map.png">
+            </div>
+            <div class="mdl-card__supporting-text text-center center-block mdl-card--border">
+               <address class="card-text"> 91 3rd Ave <br /> New York, NY, 10003 <br />Phone: 212-488-6586</address>
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+               <a href="http://goo.gl/f4MoKp" target="_blank"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">Directions</button></a>
+               <button class="mdl-button mdl-js-button mdl-js-ripple-effect ">See Hours</button>
+               <button class="mdl-button mdl-js-button mdl-js-ripple-effect visible-xs-inline">Call</button>  
+            </div>
+         </div>
+      </div>
+   </div>
 </body>
+<script>
+  $(window).scroll(function() {
+  $(".slideanim").each(function(){
+    var pos = $(this).offset().top;
+
+    var winTop = $(window).scrollTop();
+    if (pos < winTop + 600) {
+      $(this).addClass("slide");
+    }
+  });
+});
+</script>
