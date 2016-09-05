@@ -1,6 +1,5 @@
 <title>md-cards</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -9,35 +8,7 @@
 <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.pink-red.min.css">
 <script defer src="https://code.getmdl.io/1.2.0/material.min.js"></script>
 <style>
-   body::before {
-   background-size: cover;
-   background-attachment: fixed;
-   content: '';
-   will-change: transform;
-   z-index: -1;
-   left: 0;
-   right: 0;
-   bottom: 0;
-   top: 0;
-   position: fixed;
-   }
-   @media (max-width: 512px)  and (min-resolution: 1.5dppx),
-   (max-width: 1024px) and (max-resolution: 1.5dppx) {
-   body::before {
-   background-image: url('pic/bpxl.png');
-   }
-   }
-   @media (min-width: 513px)  and (max-width: 1024px) and (min-resolution: 1.5dppx),
-   (min-width: 1025px) and (max-width: 2048px) and (max-resolution: 1.5dppx)  {
-   body::before {
-   background-image: url('pic/bpdt.png');
-   }
-   }
-   @media (min-width: 1025px) and (min-resolution: 1.5dppx),
-   (min-width: 2049px) and (max-resolution: 1.5dppx) {
-   body::before {
-   background-image: url('pic/bp.png');
-   }
+   
    }
    .slideanim {visibility:hidden;}
    .slide {
@@ -78,16 +49,18 @@
    font-size: 16px;
    }
    .top-card{
-   margin-top: 75;
+   margin-top: 75px;
    background-color: #ffffff;
    }
    .wust{
-   margin-top: 75;
+   margin-top: 75px;
    max-width: 100%;
    height: auto;
+   margin-left: auto;
+   margin-right: auto;
    }
    .bplogo{
-   margin-top: 150;
+   margin-top: 150px;
    }
    .bgr{
    background-color: #bb0001;
@@ -96,7 +69,7 @@
    background-color: #bb0001
    }
    .test{
-   margin-top: -75;
+   margin-top: -75px;
    }
    /* Where to find us? bar*/
    .wtfu{
@@ -112,7 +85,8 @@
    .antoni{
    margin-left: auto;
    margin-top: auto;
-   font-size: 26;
+   margin-bottom: auto;
+   font-size: 26px;
    font-weight: 600;
    }
    .mdl-card__media > img {
@@ -125,15 +99,16 @@
    margin-bottom: 4px;
    font-size: 28px;
    }
-   .babe{
+   .bp-logo-box-3{
+      margin: auto;
    }
 </style>
-<body>
+
    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
          <div class="mdl-layout__header-row text-center bgr">
-            <h2 class="mdl-layout-title text-center">WUSTHOF KNIFE SHARPENING</h2>
-            <p class="antoni mdl-cell--hide-tablet mdl-cell--hide-phone"><i class="material-icons md-ic">call</i>Contact Us: 212-488-5555</p>
+            <h2 class="mdl-layout-title text-center">KNIFE SHARPENING IN NYC</h2>
+            <span class="antoni mdl-cell--hide-tablet mdl-cell--hide-phone"><i class="material-icons md-ic">call</i>Contact Us: 212-488-5555</span>
             <!-- use google # to ring ex 102 -->
          </div>
       </header>
@@ -144,9 +119,9 @@
       </div>
    </div>
    <div class="mdl-grid test">
-      <div class="mdl-card mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-shadow--2dp top-card ">
+      <div class="mdl-card mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-shadow--2dp top-card mdl-cell--top">
          <div class="mdl-card__media mdl-color-text--grey-50 text-center">
-            <h4><img class="lee"src="pic/hatg.png">Tools of the Trade</h4>
+            <h4>Tools of the Trade</h4>
          </div>
          <div class="mdl-card__supporting-text meta mdl-color-text--grey-600 text-center center-block">
             <div>
@@ -154,12 +129,12 @@
             </div>
          </div>
          <figure class="mdl-card__media">
-            <img src="pic/box1.png">
+            <img src="https://basicsplus.com/media/catalog/category/box1-1.png">
          </figure>
       </div>
       <div class="mdl-card mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-shadow--2dp top-card ">
          <div class="mdl-card__media mdl-color-text--grey-50 text-center">
-            <h4><img src="pic/knife.png" width="35" height="35"> The Importance of a Sharp Knife</h4>
+            <h4>Importance of a Sharp Knife</h4>
          </div>
          <div class="mdl-card__supporting-text meta mdl-color-text--grey-600 text-center center-block">
             <div>
@@ -167,12 +142,12 @@
             </div>
          </div>
          <figure class="mdl-card__media">
-            <img  class="babe" src="pic/box2.png">
+            <img  class="babe" src="https://basicsplus.com/media/catalog/category/box2-2.png">
          </figure>
       </div>
       <div class="mdl-card mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-shadow--2dp top-card ">
          <div class="mdl-card__media mdl-color-text--grey-50 text-center">
-            <h4><i class="material-icons md-32 lee">headset_mic</i>Our Services</h4>
+            <h4>Our Services</h4>
          </div>
          <div class="mdl-card__supporting-text meta mdl-color-text--grey-600 text-center center-block">
             <div>
@@ -180,7 +155,7 @@
                   SHARPENING & REPAIR
                   Having trouble sharpening your knives? Do your knives have chips in them? Do you need an extra-sharp edge for a special event? Bring in your knives to Basics Plus for a tune-up. We can sharpen and repair virtually any non-serrated knives, including hunting, and pocket knives. We sharpen all knives by hand using a variety of Japanese water stones. Prices vary from styles of knives and severity in damages. Traditional knives such as yanagi, usuba, and deba, require more labor and skill, thus will cost more to sharpen
                </p>
-               <img src="pic/bpsm.png">
+               <img class="bp-logo-box-3" src="https://basicsplus.com/media/catalog/category/bpsm.png">
             </div>
          </div>
       </div>
@@ -199,7 +174,7 @@
    <div class="mdl-grid">
       <div class="mdl-cell mdl-cell--12-col">
          <div class="mdl-card__media mdl-color-text--grey-50 text-center">
-            <h3 class="wtfu mdl-shadow--4dp">Where to Find Us?</h3>
+            <h4 class="wtfu mdl-shadow--4dp"><i class="material-icons lee">gps_fixed</i>Where to Find Us?</h4>
          </div>
       </div>
    </div>
@@ -207,7 +182,7 @@
       <div class="mdl-cell mdl-cell--12-col-phone bigbox mdl-cell--8-col-tablet">
          <div class="mdl-card mdl-shadow--4dp mdl-card--border box-card">
             <div class="mdl-card__media">
-               <img src="pic/map.png">
+               <img src="https://basicsplus.com/media/catalog/category/map.png">
             </div>
             <div class="mdl-card__supporting-text text-center center-block mdl-card--border ">
                <address class="card-text"> 91 3rd Ave <br /> New York, NY, 10003 <br />Phone: 212-488-6586</address>
@@ -222,7 +197,7 @@
       <div class="mdl-cell mdl-cell--12-col-phone bigbox mdl-cell--8-col-tablet">
          <div class="mdl-card mdl-shadow--4dp mdl-card--border box-card">
             <div class="mdl-card__media">
-               <img src="pic/map.png">
+               <img src="https://basicsplus.com/media/catalog/category/map.png">
             </div>
             <div class="mdl-card__supporting-text text-center center-block mdl-card--border ">
                <address class="card-text"> 91 3rd Ave <br /> New York, NY, 10003 <br />Phone: 212-488-6586</address>
@@ -237,7 +212,7 @@
       <div class="mdl-cell mdl-cell--12-col-phone bigbox mdl-cell--8-col-tablet">
          <div class="mdl-card mdl-shadow--4dp mdl-card--border box-card">
             <div class="mdl-card__media">
-               <img src="pic/map.png">
+               <img src="https://basicsplus.com/media/catalog/category/map.png">
             </div>
             <div class="mdl-card__supporting-text text-center center-block mdl-card--border">
                <address class="card-text"> 91 3rd Ave <br /> New York, NY, 10003 <br />Phone: 212-488-6586</address>
@@ -252,7 +227,7 @@
       <div class="mdl-cell mdl-cell--12-col-phone bigbox mdl-cell--8-col-tablet">
          <div class="mdl-card mdl-shadow--4dp mdl-card--border box-card">
             <div class="mdl-card__media">
-               <img src="pic/map.png">
+               <img src="https://basicsplus.com/media/catalog/category/map.png">
             </div>
             <div class="mdl-card__supporting-text text-center center-block mdl-card--border">
                <address class="card-text"> 91 3rd Ave <br /> New York, NY, 10003 <br />Phone: 212-488-6586</address>
@@ -269,7 +244,7 @@
       <div class="mdl-cell mdl-cell--12-col-phone bigbox mdl-cell--8-col-tablet">
          <div class="mdl-card mdl-shadow--4dp mdl-card--border box-card">
             <div class="mdl-card__media">
-               <img src="pic/map.png">
+               <img src="https://basicsplus.com/media/catalog/category/map.png">
             </div>
             <div class="mdl-card__supporting-text text-center center-block mdl-card--border ">
                <address class="card-text"> 91 3rd Ave <br /> New York, NY, 10003 <br />Phone: 212-488-6586</address>
@@ -284,7 +259,7 @@
       <div class="mdl-cell mdl-cell--12-col-phone bigbox mdl-cell--8-col-tablet">
          <div class="mdl-card mdl-shadow--4dp mdl-card--border box-card">
             <div class="mdl-card__media">
-               <img src="pic/map.png">
+               <img src="https://basicsplus.com/media/catalog/category/map.png">
             </div>
             <div class="mdl-card__supporting-text text-center center-block mdl-card--border ">
                <address class="card-text"> 91 3rd Ave <br /> New York, NY, 10003 <br />Phone: 212-488-6586</address>
@@ -299,7 +274,7 @@
       <div class="mdl-cell mdl-cell--12-col-phone bigbox mdl-cell--8-col-tablet">
          <div class="mdl-card mdl-shadow--4dp mdl-card--border box-card">
             <div class="mdl-card__media">
-               <img src="pic/map.png">
+               <img src="https://basicsplus.com/media/catalog/category/map.png">
             </div>
             <div class="mdl-card__supporting-text text-center center-block mdl-card--border">
                <address class="card-text"> 91 3rd Ave <br /> New York, NY, 10003 <br />Phone: 212-488-6586</address>
@@ -314,7 +289,7 @@
       <div class="mdl-cell mdl-cell--12-col-phone bigbox mdl-cell--8-col-tablet">
          <div class="mdl-card mdl-shadow--4dp mdl-card--border box-card">
             <div class="mdl-card__media">
-               <img src="pic/map.png">
+               <img src="https://basicsplus.com/media/catalog/category/map.png">
             </div>
             <div class="mdl-card__supporting-text text-center center-block mdl-card--border">
                <address class="card-text"> 91 3rd Ave <br /> New York, NY, 10003 <br />Phone: 212-488-6586</address>
@@ -327,7 +302,7 @@
          </div>
       </div>
    </div>
-</body>
+
 <script>
    $(window).scroll(function() {
    $(".slideanim").each(function(){
