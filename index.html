@@ -8,46 +8,6 @@
 <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.pink-red.min.css">
 <script defer src="https://code.getmdl.io/1.2.0/material.min.js"></script>
 <style>
-   
-   }
-   .slideanim {visibility:hidden;}
-   .slide {
-   /* The name of the animation */
-   animation-name: slide;
-   -webkit-animation-name: slide; 
-   /* The duration of the animation */
-   animation-duration: 1s; 
-   -webkit-animation-duration: 1s;
-   /* Make the element visible */
-   visibility: visible; 
-   }
-   /* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
-   @keyframes slide {
-   0% {
-   opacity: 0;
-   -webkit-transform: translateY(70%);
-   } 
-   100% {
-   opacity: 1;
-   -webkit-transform: translateY(0%);
-   } 
-   }
-   @-webkit-keyframes slide {
-   0% {
-   opacity: 0;
-   -webkit-transform: translateY(70%);
-   } 
-   100% {
-   opacity: 1;
-   -webkit-transform: translateY(0%);
-   }
-   }
-   .mdl-card__media {
-   background-color: #bb0001;
-   }
-   .card-text {
-   font-size: 16px;
-   }
    .top-card {
    margin-top: 75px;
    background-color: #ffffff;
@@ -109,7 +69,6 @@
     font-weight: bold;
     min-width: 28%;
     margin-top: 2px;
-
    }
    /*Knife Sharpening Available Here*/
    .ksah{
@@ -117,6 +76,40 @@
       color: #ffffff;
       padding: 8px;
       white-space: nowrap;
+   }
+   .card-text {
+   font-size: 16px !important;
+   } 
+   .slideanim {visibility:hidden;}
+   .slide {
+   /* The name of the animation */
+   animation-name: slide;
+   -webkit-animation-name: slide; 
+   /* The duration of the animation */
+   animation-duration: 1s; 
+   -webkit-animation-duration: 1s;
+   /* Make the element visible */
+   visibility: visible; 
+   }
+   /* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+   @keyframes slide {
+   0% {
+   opacity: 0;
+   -webkit-transform: translateY(70%);
+   } 
+   100% {
+   opacity: 1;
+   -webkit-transform: translateY(0%);
+   } 
+   }
+   @-webkit-keyframes slide {
+   0% {
+   opacity: 0;
+   -webkit-transform: translateY(70%);
+   } 
+   100% {
+   opacity: 1;
+   -webkit-transform: translateY(0%);
    }
    
 </style>
@@ -137,7 +130,7 @@
    </div>
    <div class="mdl-grid test">
       <div class="mdl-card mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-shadow--2dp top-card mdl-cell--top">
-         <div class="mdl-card__media mdl-color-text--grey-50 text-center">
+         <div class="mdl-card__media mdl-color-text--grey-50 text-center bgr">
             <h4>Tools of the Trade</h4>
          </div>
          <div class="mdl-card__supporting-text meta mdl-color-text--grey-600 text-center center-block">
@@ -149,13 +142,13 @@
             <img src="https://basicsplus.com/media/catalog/category/box1-1.png">
          </figure>
       </div>
-      <div class="mdl-card mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-shadow--2dp top-card ">
-         <div class="mdl-card__media mdl-color-text--grey-50 text-center">
+      <div class="mdl-card mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-shadow--2dp top-card">
+         <div class="mdl-card__media mdl-color-text--grey-50 text-center bgr">
             <h4>Importance of a Sharp Knife</h4>
          </div>
          <div class="mdl-card__supporting-text meta mdl-color-text--grey-600 text-center center-block">
             <div>
-               <p>Keeping a sharp edge on your WÜSTHOF knives is really important. Compensating for a dull blade by adding additional force can be dangerous. A sharp knife is a safer knife. There are multiple ways to keep your knives sharp.</p>
+               <p>Keeping a sharp edge on your WUSTHOF knives is really important. Compensating for a dull blade by adding additional force can be dangerous. A sharp knife is a safer knife. There are multiple ways to keep your knives sharp.</p>
             </div>
          </div>
          <figure class="mdl-card__media">
@@ -163,7 +156,7 @@
          </figure>
       </div>
       <div class="mdl-card mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-shadow--2dp top-card ">
-         <div class="mdl-card__media mdl-color-text--grey-50 text-center">
+         <div class="mdl-card__media mdl-color-text--grey-50 text-center bgr">
             <h4>Our Services</h4>
          </div>
          <div class="mdl-card__supporting-text meta mdl-color-text--grey-600 text-center center-block">
@@ -177,20 +170,20 @@
          </div>
       </div>
       <div class="mdl-card mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-shadow--2dp top-card   mdl-cell--hide-desktop mdl-cell--top">
-         <div class="mdl-card__media mdl-color-text--grey-50 text-center">
-            <h4><i class="material-icons">call</i> Contact Us</h4>
+         <div class="mdl-card__media mdl-color-text--grey-50 text-center bgr">
+            <h4>Contact Us</h4>
          </div>
          <div class="mdl-card__supporting-text meta mdl-color-text--grey-600 text-center center-block">
-            <address class="card-text"> 91 3rd Ave <br /> New York, NY, 10003 <br />Phone: 212-488-6586</address>
+            <address class="card-text">Main Office <br /> 91 3rd Ave <br /> New York, NY, 10003 <br />Phone: 212-488-6586</address>
             <div class="mdl-card__actions min-btn text-center mdl-card--border mdl-card__actions">
-               <a target="_blank" href="https://basicsplus.com/shop-by-brand/wusthof.html"><button type="button" class="bgr mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary">Call Us</button></a>
+               <a href="tel: +12124886586"><button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary"><i class="material-icons">call</i>Call Us</button></a>
             </div>
          </div>
       </div>
    </div>
    <div class="mdl-grid">
       <div class="mdl-cell mdl-cell--12-col">
-         <div class="mdl-card__media mdl-color-text--grey-50 text-center">
+         <div class="mdl-card__media mdl-color-text--grey-50 text-center bgr">
             <h4 class="wtfu mdl-shadow--4dp"><i class="material-icons lee">gps_fixed</i>Where to Find Us?</h4>
          </div>
       </div>
@@ -200,7 +193,7 @@
       <div class="mdl-cell mdl-cell--12-col-phone bigbox mdl-cell--8-col-tablet">
          <div class="mdl-card mdl-shadow--4dp mdl-card--border box-card">
             <div class="mdl-card__media">
-               <img src="pic/rs.jpg">
+               <img src="https://basicsplus.com/media/catalog/category/rs.jpg">
             </div>
             <div class="mdl-card__supporting-text text-center center-block mdl-card--border">
                <address class="card-text">2315 BROADWAY<br />NEW YORK, NY, 10024<br />PHONE: 212-873-7837</address>
@@ -217,7 +210,7 @@
       <div class="mdl-cell mdl-cell--12-col-phone bigbox mdl-cell--8-col-tablet">
          <div class="mdl-card mdl-shadow--4dp mdl-card--border box-card">
             <div class="mdl-card__media">
-               <img src="pic/uni.png">
+               <img src="https://basicsplus.com/media/catalog/category/uni.png">
             </div>
             <div class="mdl-card__supporting-text text-center center-block mdl-card--border">
                <address class="card-text">121 UNIVERSITY PL<br />NEW YORK, NY, 10003<br />PHONE: 212-228-4950</address>
@@ -234,7 +227,7 @@
       <div class="mdl-cell mdl-cell--12-col-phone bigbox mdl-cell--8-col-tablet">
          <div class="mdl-card mdl-shadow--4dp mdl-card--border box-card">
             <div class="mdl-card__media">
-               <img src="pic/canal.png">
+               <img src="https://basicsplus.com/media/catalog/category/canal.png">
             </div>
             <div class="mdl-card__supporting-text text-center center-block mdl-card--border ">
                <address class="card-text">386 CANAL ST<br />NEW YORK, NY, 10013<br />PHONE: 212-219-7601</address>
@@ -251,7 +244,7 @@
       <div class="mdl-cell mdl-cell--12-col-phone bigbox mdl-cell--8-col-tablet">
          <div class="mdl-card mdl-shadow--4dp mdl-card--border box-card">
             <div class="mdl-card__media">
-               <img src="pic/citi.png">
+               <img src="https://basicsplus.com/media/catalog/category/citi.png">
             </div>
             <div class="mdl-card__supporting-text text-center center-block mdl-card--border ">
                <address class="card-text">845 2ND AVE<br />NEW YORK, NY, 10017<br />PHONE: 212-682-6311</address>
@@ -270,7 +263,7 @@
       <div class="mdl-cell mdl-cell--12-col-phone bigbox mdl-cell--8-col-tablet">
          <div class="mdl-card mdl-shadow--4dp mdl-card--border box-card">
             <div class="mdl-card__media">
-               <img src="pic/12th_side.png">
+               <img src="https://basicsplus.com/media/catalog/category/12th_side.png">
             </div>
             <div class="mdl-card__supporting-text text-center center-block mdl-card--border ">
                <address class="card-text"> 91 3RD AVE <br /> NEW YORY, NY, 10003 <br />PHONE: 646-559-9244</address>
@@ -287,7 +280,7 @@
       <div class="mdl-cell mdl-cell--12-col-phone bigbox mdl-cell--8-col-tablet">
          <div class="mdl-card mdl-shadow--4dp mdl-card--border box-card">
             <div class="mdl-card__media">
-               <img src="pic/john.jpg">
+               <img src="https://basicsplus.com/media/catalog/category/john.jpg">
             </div>
             <div class="mdl-card__supporting-text text-center center-block mdl-card--border ">
                <address class="card-text">85 JOHN ST<br />NEW YORK, NY, 10038<br />PHONE: 212-791-6870</address>
@@ -303,7 +296,7 @@
       <div class="mdl-cell mdl-cell--12-col-phone bigbox mdl-cell--8-col-tablet">
          <div class="mdl-card mdl-shadow--4dp mdl-card--border box-card">
             <div class="mdl-card__media">
-               <img src="pic/3rd.png">
+               <img src="https://basicsplus.com/media/catalog/category/3rd.png">
             </div>
             <div class="mdl-card__supporting-text text-center center-block mdl-card--border">
                <address class="card-text">194 3RD AVE<br />NEW YORK, NY, 10003<br />PHONE: 212-432-2230</address>
@@ -319,7 +312,7 @@
       <div class="mdl-cell mdl-cell--12-col-phone bigbox mdl-cell--8-col-tablet">
          <div class="mdl-card mdl-shadow--4dp mdl-card--border box-card">
             <div class="mdl-card__media">
-               <img src="pic/1st.png">
+               <img src="https://basicsplus.com/media/catalog/category/1st.png">
             </div>
             <div class="mdl-card__supporting-text text-center center-block mdl-card--border">
                <address class="card-text">1621 FIRST AVE<br />NEW YORK, NY, 10028<br />PHONE: 212-452-1305</address>
