@@ -80,6 +80,11 @@
    .card-text {
    font-size: 16px !important;
    } 
+   .pop-over{
+   width: auto;
+   min-height: 195px;
+   white-space: nowrap;
+}
    .slideanim {visibility:hidden;}
    .slide {
    /* The name of the animation */
@@ -201,7 +206,19 @@
             </div>
             <div class="mdl-card__actions mdl-card--border text-center">
                <a href="https://goo.gl/het1Dj" target="_blank"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">Directions</button></a>
-               <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">See Hours</button>
+               <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary show-modal">See Hours</button>
+               <dialog class="mdl-dialog mdl-shadow--16dp">
+                <div class="mdl-dialog__content">
+                  <h3>Store Hours:</h3>
+                  <p>
+                    Monday - Friday: 8am-10pm <br /> Saturday: 9am-10pm <br /> Sunday: 10am-10pm
+                  </p>
+                </div>
+                <div class="mdl-dialog__actions">
+                  <button type="button" class="mdl-button"><i class="material-icons">call</i>Call</button>
+                  <button type="button" class="mdl-button close">Close</button>
+                </div>
+              </dialog>
                <a href="tel: +12128737837"><button class="mdl-button mdl-js-button mdl-js-ripple-effect visible-xs-inline mdl-button--primary"><i class="material-icons">call</i>Call</button></a>  
             </div>
          </div>
@@ -314,12 +331,18 @@
             <div class="mdl-card__media">
                <img src="https://basicsplus.com/media/catalog/category/1st.png">
             </div>
+            <div id="pop" class="mdl-card mdl-shadow--2dp hidden pop-over">
+              <div class="mdl-card__supporting-text text-center center-block">
+                <h4>Store Hours:</h4>
+                <p>Monday - Friday: 8AM - 10PM <br /> Saturday: 9AM - 10PM <br /> Sunday: 10AM - 10PM</p>
+               </div>
+            </div>
             <div class="mdl-card__supporting-text text-center center-block mdl-card--border">
                <address class="card-text">1621 FIRST AVE<br />NEW YORK, NY, 10028<br />PHONE: 212-452-1305</address>
             </div>
             <div class="mdl-card__actions mdl-card--border text-center">
                <a href="https://goo.gl/XmYMX5" target="_blank"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">Directions</button></a>
-               <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">See Hours</button>
+               <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary see-hours">See Hours</button>
                <a href="tel: +12124521305"><button class="mdl-button mdl-js-button mdl-js-ripple-effect visible-xs-inline mdl-button--primary"><i class="material-icons">call</i>Call</button></a>  
             </div>
          </div>
@@ -338,6 +361,12 @@
   });
 });
   $(document).ready(function(){
-       $('[data-toggle="popover"]').popover();
+       // on click on button
+       $("button.see-hours").click(function(){
+       // toggle show/hide  
+       $("div.pop-over").toggle(500);
+       // Doesn't show on load
+       $('#pop').removeClass('hidden');
+   });
    });
 </script>
