@@ -1,4 +1,4 @@
-<title>md-cards</title>
+<title>Knife Sharpening</title>
 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -80,6 +80,28 @@
    .card-text {
    font-size: 16px !important;
    } 
+   .pop-over{
+   width: auto;
+   min-height: 195px;
+   white-space: nowrap;
+   }
+
+   /*CSS for toggles in mdl*/
+/*   .mdl-switch__label {
+    position: relative;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+    left: 12px;
+   }
+   .mdl-switch.is-checked .mdl-switch__thumb {
+    background: #bb0001;
+   }
+   .mdl-switch.is-checked .mdl-switch__track {
+    background: rgba(187, 0, 1, 0.8);
+   }
+*/
    .slideanim {visibility:hidden;}
    .slide {
    /* The name of the animation */
@@ -195,13 +217,19 @@
             <div class="mdl-card__media">
                <img src="https://basicsplus.com/media/catalog/category/rs.jpg">
             </div>
+            <div id="pop-rs" class="mdl-card mdl-shadow--2dp hidden pop-over">
+              <div class="mdl-card__supporting-text text-center center-block">
+                <h4>Store Hours:</h4>
+                <p>Monday - Friday: 8AM - 10PM <br /> Saturday: 9AM - 10PM <br /> Sunday: 10AM - 10PM</p>
+              </div>
+            </div>
             <div class="mdl-card__supporting-text text-center center-block mdl-card--border">
                <address class="card-text">2315 BROADWAY<br />NEW YORK, NY, 10024<br />PHONE: 212-873-7837</address>
-               <strong class="ksah">Knife Sharpening Available Here</strong>
+               <strong class="ksah mdl-shadow--2dp">Knife Sharpening Available Here</strong>
             </div>
             <div class="mdl-card__actions mdl-card--border text-center">
-               <a href="https://goo.gl/het1Dj" target="_blank"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">Directions</button></a>
-               <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">See Hours</button>
+               <a href="https://goo.gl/het1Dj" target="_blank"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary"><i class="material-icons">directions</i>Directions</button></a>
+               <button id="switch-rs" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary"><i class="material-icons">access_time</i>Hours</button>
                <a href="tel: +12128737837"><button class="mdl-button mdl-js-button mdl-js-ripple-effect visible-xs-inline mdl-button--primary"><i class="material-icons">call</i>Call</button></a>  
             </div>
          </div>
@@ -212,14 +240,22 @@
             <div class="mdl-card__media">
                <img src="https://basicsplus.com/media/catalog/category/uni.png">
             </div>
+            <div id="pop-uni" class="mdl-card mdl-shadow--2dp hidden pop-over">
+              <div class="mdl-card__supporting-text text-center center-block">
+                <h4>Store Hours:</h4>
+                <p>Monday - Friday: 8AM - 10PM <br /> Saturday: 9AM - 10PM <br /> Sunday: 10AM - 10PM</p>
+              </div>
+            </div>
             <div class="mdl-card__supporting-text text-center center-block mdl-card--border">
                <address class="card-text">121 UNIVERSITY PL<br />NEW YORK, NY, 10003<br />PHONE: 212-228-4950</address>
-               <strong class="ksah">Knife Sharpening Available Here</strong>
+               <strong class="ksah mdl-shadow--2dp">Knife Sharpening Available Here</strong>
             </div>
             <div class="mdl-card__actions mdl-card--border text-center">
-               <a href="https://goo.gl/hdQKyN" target="_blank"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">Directions</button></a>
-               <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">See Hours</button>
-               <a href="tel: +12122284950"><button class="mdl-button mdl-js-button mdl-js-ripple-effect visible-xs-inline mdl-button--primary"><i class="material-icons">call</i>Call</button></a>  
+               <a href="https://goo.gl/hdQKyN" target="_blank"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary"><i class="material-icons">directions</i>Directions</button></a>
+               <button id="switch-uni" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary"><i class="material-icons">access_time</i>Hours</button>
+               <a href="tel: +12122284950">
+               <button class="mdl-button mdl-js-button mdl-js-ripple-effect visible-xs-inline mdl-button--primary"><i class="material-icons">call</i>Call</button>
+               </a>  
             </div>
          </div>
       </div>
@@ -229,13 +265,19 @@
             <div class="mdl-card__media">
                <img src="https://basicsplus.com/media/catalog/category/canal.png">
             </div>
+            <div id="pop-canal" class="mdl-card mdl-shadow--2dp hidden pop-over">
+              <div class="mdl-card__supporting-text text-center center-block">
+                <h4>Store Hours:</h4>
+                <p>Monday - Friday: 8AM - 8PM <br /> Saturday: 9AM - 6PM <br /> Sunday: 10AM - 6PM</p>
+              </div>
+            </div>
             <div class="mdl-card__supporting-text text-center center-block mdl-card--border ">
                <address class="card-text">386 CANAL ST<br />NEW YORK, NY, 10013<br />PHONE: 212-219-7601</address>
-               <strong class="ksah">Knife Sharpening Available Here</strong>
+               <strong class="ksah mdl-shadow--2dp">Knife Sharpening Available Here</strong>
             </div>
             <div class="mdl-card__actions mdl-card--border text-center">
-               <a href="https://goo.gl/njrqBL" target="_blank"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">Directions</button></a>
-               <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">See Hours</button>
+               <a href="https://goo.gl/njrqBL" target="_blank"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary"><i class="material-icons">directions</i>Directions</button></a>
+               <button id="switch-canal" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary"><i class="material-icons">access_time</i>Hours</button>
                <a href="tel: +12122197601"><button class="mdl-button mdl-js-button mdl-js-ripple-effect visible-xs-inline mdl-button--primary"><i class="material-icons">call</i>Call</button></a>  
             </div>
          </div>
@@ -246,13 +288,19 @@
             <div class="mdl-card__media">
                <img src="https://basicsplus.com/media/catalog/category/citi.png">
             </div>
+            <div id="pop-citi" class="mdl-card mdl-shadow--2dp hidden pop-over">
+              <div class="mdl-card__supporting-text text-center center-block">
+                <h4>Store Hours:</h4>
+                <p>Monday - Friday: 8AM - 10PM <br /> Saturday: 9AM - 10PM <br /> Sunday: 10AM - 10PM</p>
+              </div>
+            </div>
             <div class="mdl-card__supporting-text text-center center-block mdl-card--border ">
                <address class="card-text">845 2ND AVE<br />NEW YORK, NY, 10017<br />PHONE: 212-682-6311</address>
-               <strong class="ksah">Knife Sharpening Available Here</strong>
+               <strong class="ksah mdl-shadow--2dp">Knife Sharpening Available Here</strong>
             </div>
             <div class="mdl-card__actions mdl-card--border text-center">
-               <a href="https://goo.gl/xXgXkE" target="_blank"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">Directions</button></a>
-               <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">See Hours</button>
+               <a href="https://goo.gl/xXgXkE" target="_blank"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary"><i class="material-icons">directions</i>Directions</button></a>
+               <button id="switch-citi" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary"><i class="material-icons">access_time</i>Hours</button>
                <a href="tel: +12126826311"><button class="mdl-button mdl-js-button mdl-js-ripple-effect visible-xs-inline mdl-button--primary"><i class="material-icons">call</i>Call</button></a>
             </div>
          </div>
@@ -265,13 +313,18 @@
             <div class="mdl-card__media">
                <img src="https://basicsplus.com/media/catalog/category/12th_side.png">
             </div>
+            <div id="pop-12th" class="mdl-card mdl-shadow--2dp hidden pop-over">
+              <div class="mdl-card__supporting-text text-center center-block">
+                <h4>Store Hours:</h4>
+                <p>Monday - Friday: 8AM - 10PM <br /> Saturday: 9AM - 10PM <br /> Sunday: 10AM - 10PM</p>
+              </div>
+            </div>
             <div class="mdl-card__supporting-text text-center center-block mdl-card--border ">
                <address class="card-text"> 91 3RD AVE <br /> NEW YORY, NY, 10003 <br />PHONE: 646-559-9244</address>
             </div>
             <div class="mdl-card__actions mdl-card--border text-center center-block">
-               <a href="https://goo.gl/aJcIFg" target="_blank"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">Directions</button></a>
-               <button id="po1" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">See Hours</button>
-               <span for="po1" class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top">Monday - Friday: 8am-10pm<br />Saturday: 9am-10pm<br />Sunday: 10am-10pm</span>
+               <a href="https://goo.gl/aJcIFg" target="_blank"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary"><i class="material-icons">directions</i>Directions</button></a>
+               <button id="switch-12th" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary"><i class="material-icons">access_time</i>Hours</button>
                <a href="tel: +16465599244"><button class="mdl-button mdl-js-button mdl-js-ripple-effect visible-xs-inline mdl-button--primary"><i class="material-icons">call</i>Call</button></a>
             </div>
          </div>
@@ -282,12 +335,18 @@
             <div class="mdl-card__media">
                <img src="https://basicsplus.com/media/catalog/category/john.jpg">
             </div>
+            <div id="pop-john" class="mdl-card mdl-shadow--2dp hidden pop-over">
+              <div class="mdl-card__supporting-text text-center center-block">
+                <h4>Store Hours:</h4>
+                <p>Monday - Friday: 9AM - 10PM <br /> Saturday: 9AM - 10PM <br /> Sunday: 10AM - 10PM</p>
+              </div>
+            </div>
             <div class="mdl-card__supporting-text text-center center-block mdl-card--border ">
                <address class="card-text">85 JOHN ST<br />NEW YORK, NY, 10038<br />PHONE: 212-791-6870</address>
             </div>
             <div class="mdl-card__actions mdl-card--border text-center">
-               <a href="https://goo.gl/4kpOkp" target="_blank"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">Directions</button></a>
-               <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">See Hours</button>
+               <a href="https://goo.gl/4kpOkp" target="_blank"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary"><i class="material-icons">directions</i>Directions</button></a>
+               <button id="switch-john" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary"><i class="material-icons">access_time</i>Hours</button>
                <a href="tel: +12127916870"><button class="mdl-button mdl-js-button mdl-js-ripple-effect visible-xs-inline mdl-button--primary"><i class="material-icons">call</i>Call</button></a>  
             </div>
          </div>
@@ -298,12 +357,18 @@
             <div class="mdl-card__media">
                <img src="https://basicsplus.com/media/catalog/category/3rd.png">
             </div>
+            <div id="pop-3rd" class="mdl-card mdl-shadow--2dp hidden pop-over">
+              <div class="mdl-card__supporting-text text-center center-block">
+                <h4>Store Hours:</h4>
+                <p>Monday - Friday: 8AM - 10PM <br /> Saturday: 9AM - 10PM <br /> Sunday: 10AM - 10PM</p>
+              </div>
+            </div>
             <div class="mdl-card__supporting-text text-center center-block mdl-card--border">
                <address class="card-text">194 3RD AVE<br />NEW YORK, NY, 10003<br />PHONE: 212-432-2230</address>
             </div>
             <div class="mdl-card__actions mdl-card--border text-center">
-               <a href="https://goo.gl/K1TmGl" target="_blank"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">Directions</button></a>
-               <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">See Hours</button>
+               <a href="https://goo.gl/K1TmGl" target="_blank"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary"><i class="material-icons">directions</i>Directions</button></a>
+               <button id="switch-3rd" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary"><i class="material-icons">access_time</i>Hours</button>
                <a href="tel: +12124322230"><button class="mdl-button mdl-js-button mdl-js-ripple-effect visible-xs-inline mdl-button--primary"><i class="material-icons">call</i>Call</button></a>  
             </div>
          </div>
@@ -314,12 +379,24 @@
             <div class="mdl-card__media">
                <img src="https://basicsplus.com/media/catalog/category/1st.png">
             </div>
+            <div id="pop-1st" class="mdl-card mdl-shadow--2dp hidden pop-over">
+              <div class="mdl-card__supporting-text text-center center-block">
+                <h4>Store Hours:</h4>
+                <p>Monday - Friday: 8AM - 10PM <br /> Saturday: 9AM - 10PM <br /> Sunday: 10AM - 10PM</p>
+              </div>
+            </div>
+            <div id="pop2" class="mdl-card mdl-shadow--2dp hidden pop-over">
+              <div class="mdl-card__supporting-text text-center center-block">
+                <h4>Store Hours:</h4>
+                <p>Monday - Friday: 8AM - 10PM <br /> Saturday: 9AM - 10PM <br /> Sunday: 10AM - 10PM</p>
+              </div>
+            </div>
             <div class="mdl-card__supporting-text text-center center-block mdl-card--border">
                <address class="card-text">1621 FIRST AVE<br />NEW YORK, NY, 10028<br />PHONE: 212-452-1305</address>
             </div>
             <div class="mdl-card__actions mdl-card--border text-center">
-               <a href="https://goo.gl/XmYMX5" target="_blank"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">Directions</button></a>
-               <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">See Hours</button>
+               <a href="https://goo.gl/XmYMX5" target="_blank"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary"><i class="material-icons">directions</i>Directions</button></a>
+               <button id="switch-1st" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary"><i class="material-icons">access_time</i>Hours</button>
                <a href="tel: +12124521305"><button class="mdl-button mdl-js-button mdl-js-ripple-effect visible-xs-inline mdl-button--primary"><i class="material-icons">call</i>Call</button></a>  
             </div>
          </div>
@@ -336,8 +413,64 @@
       $(this).addClass("slide");
     }
   });
-});
+  });
+ // How can i loop over all the ids in 1 function
   $(document).ready(function(){
-       $('[data-toggle="popover"]').popover();
+       // on click on button
+       $("#switch-rs").click(function(){
+       // toggle show/hide  
+       $("#pop-rs").toggle(500);
+       // Doesn't show on load
+       $('#pop-rs').removeClass('hidden');
+   });
+       // on click on button
+       $("#switch-uni").click(function(){
+       // toggle show/hide  
+       $("#pop-uni").toggle(500);
+       // Doesn't show on load
+       $('#pop-uni').removeClass('hidden');
+   });
+       // on click on button
+       $("#switch-canal").click(function(){
+       // toggle show/hide  
+       $("#pop-canal").toggle(500);
+       // Doesn't show on load
+       $('#pop-canal').removeClass('hidden');
+   });
+       // on click on button
+       $("#switch-citi").click(function(){
+       // toggle show/hide  
+       $("#pop-citi").toggle(500);
+       // Doesn't show on load
+       $('#pop-citi').removeClass('hidden');
+   });
+       // on click on button
+       $("#switch-12th").click(function(){
+       // toggle show/hide  
+       $("#pop-12th").toggle(500);
+       // Doesn't show on load
+       $('#pop-12th').removeClass('hidden');
+   });
+       // on click on button
+       $("#switch-john").click(function(){
+       // toggle show/hide  
+       $("#pop-john").toggle(500);
+       // Doesn't show on load
+       $('#pop-john').removeClass('hidden');
+   });
+       // on click on button
+       $("#switch-3rd").click(function(){
+       // toggle show/hide  
+       $("#pop-3rd").toggle(500);
+       // Doesn't show on load
+       $('#pop-3rd').removeClass('hidden');
+   });
+       // on click on button
+       $("#switch-1st").click(function(){
+       // toggle show/hide  
+       $("#pop-1st").toggle(500);
+       // Doesn't show on load
+       $('#pop-1st').removeClass('hidden');
+   });
    });
 </script>
